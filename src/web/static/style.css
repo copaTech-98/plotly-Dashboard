@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f2f2;
+  overflow: hidden; }
+  .content .box {
+    font-size: 8px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: max-content;
+    width: 52%;
+    height: max-content;
+    max-width: 100%;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 0 5px rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    margin: 10px 20px;
+    background-color: white;
+    overflow: hidden; }
+    .content .box .resize {
+      position: absolute;
+      background-color: #3895EA;
+      transition: 0.3s;
+      opacity: 0; }
+    .content .box .resize-bottom {
+      bottom: -1px;
+      left: 0;
+      height: 8px;
+      width: 100%; }
+    .content .box .resize:hover {
+      opacity: 1; }
+    .content .box .resize-right {
+      right: -1px;
+      top: 0px;
+      width: 8px;
+      height: 100%; }
+    .content .box .resize-right:hover {
+      cursor: col-resize; }
+    .content .box .resize-bottom:hover {
+      cursor: row-resize; }
+    .content .box .resize-left {
+      left: -1px;
+      top: 0px;
+      width: 8px;
+      height: 100%; }
+    .content .box .resize-left:hover {
+      cursor: col-resize; }
+    .content .box .resize-top {
+      top: -1px;
+      left: 0px;
+      width: 100%;
+      height: 8px; }
+    .content .box .resize-top:hover {
+      cursor: row-resize; }
+    .content .box .panel_window {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      background-color: #293133;
+      color: #f2f2f2;
+      opacity: 0.1; }
+      .content .box .panel_window ul {
+        list-style: none; }
+        .content .box .panel_window ul li button {
+          padding: 5px;
+          font-size: 18px;
+          color: #f2f2f2;
+          background-color: transparent;
+          border: none;
+          transition: 0.3s; }
+        .content .box .panel_window ul li button:hover {
+          cursor: pointer;
+          background: #f2f2f2;
+          color: #293133; }
+    .content .box .panel_window:hover {
+      opacity: 1; }
+
+.svg-container {
+  width: 100% !important; }
+
+.main-svg {
+  width: 100% !important; }
+
+/*# sourceMappingURL=style.css.map */
